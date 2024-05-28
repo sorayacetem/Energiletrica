@@ -1,0 +1,275 @@
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+h3{
+    font-size: 1.6em;
+}
+
+h4{
+    font-size: 1.4em;
+    margin: 20px;
+}
+
+span{
+    font-size: 1em;
+}
+
+label{
+    font-size: 1em;
+}
+
+#nav{
+    background-color: rgb(255, 255, 255);
+    width: 20vw;
+    height: 100vh;
+    border-right: 15px solid #00AE9F;
+    margin: 0;
+    padding: 0;
+}
+
+
+.flex-colum{
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0em -3em 30px 4px #b4b4b4;
+    border-bottom: 1px solid #868686;
+    cursor: pointer;
+    filter: grayscale(120%) brightness(120%) opacity(60%);
+}
+
+.flex-colum img{
+    height: 90px;
+    margin: 0;
+    padding: 0;  
+    
+}
+
+.flex-colum h3{
+    color: #00AE9F;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.selected{     
+    box-shadow: 0px 0px;  
+    filter: grayscale(0%);
+    box-shadow: inset 0em -1em 30px 4px #cecece;
+    border: 1px solid #dadada;
+   
+}
+
+.selected img{  
+}
+
+.selected h3{  
+    color: #12867d;
+}
+
+
+
+.static-logo{
+    height: 14vh;
+    text-align: center;
+    
+}
+
+.static-logo img{
+    height: 100px;
+
+
+}
+.page{
+    background-color: rgb(255, 255, 255);
+    width: 78%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.navTop{
+    background-color: #EFEFEF;
+    width: 900px;
+    height: 60px;
+    display: flex;
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 1px 2px 4px 2px #ccc;
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.navTop img{
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    
+}
+
+.navTop h3{
+    color: #006DAE;
+    width: auto;
+}
+
+h3 .active{
+    color: #868686;
+}
+
+/* Dashboard */
+
+#TPC{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 20px 10px 20px;
+}
+
+.dash_box{
+    width: 466px;
+    min-height: 260px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.dash_box h4{
+    color: #006DAE;
+
+}
+
+#protecao img{
+    height: 120px;
+}
+
+#frequencia span{
+    font-size: 90px;
+    color: #00AE9F;
+    font-weight: 700;
+
+}
+
+#progressBar {
+    width: 300px;
+    height: 60px;
+    background-color: #CCC;
+    position: relative;
+    margin: 0 auto;
+    border: 10px solid #fff;
+    border-radius: 10px;
+}
+#progressBar #bar{
+   position: absolute;
+   height: 100%;
+   background-color: #00AE9F;
+   animation: progress-animation 5s infinite;
+}
+@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 100%}
+}
+
+#fatorPotencia span{
+    font-size: 70px;
+    color: #00AE9F;
+    font-weight: 700;
+
+}
+
+
+#PFF{ 
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+#totalEnergy{
+    width: auto;
+    height: 240px;
+    margin: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+
+#totalEnergy h4{
+    color: #006DAE;
+}
+
+#powerParameters{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.boxEnergy{ 
+    width: 22%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxEnergy span{
+    font-size: 20px; 
+    font-weight: 600;
+    color: #006DAE; 
+}
+.boxEnergy label{
+    font-size: 70px; 
+    color: #00AE9F; 
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

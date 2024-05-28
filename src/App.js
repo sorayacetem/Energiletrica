@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+import Navigation from './components/navigation';
+import Dashboard from './components/dashboard';
+import Unifilar from './components/unifilar';
+import Medidor from './components/medidor';
+import Historico from './components/historico';
+import Alarmes from './components/alarmes';
+import './css/style.css';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+      <Navigation /> 
+      <Switch>                
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route path="/unifilar" component={Unifilar} />
+          <Route path="/medidor" component={Medidor} />
+          <Route path="/historico" component={Historico} />
+          <Route path="/alarmes" component={Alarmes} /> 
+      </Switch>
+      </div>
+      
+    </Router>
   );
 }
 
