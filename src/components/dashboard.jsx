@@ -10,7 +10,7 @@ const Dashboard = () => {
         <a href="#">
           <img src={left} alt="Seta esquerda" />
         </a>
-        <h3>MEDIDOR 01</h3>
+        <h3 className="titulo-color">MEDIDOR 01</h3>
         <a href="#">
           <img src={right} alt="Seta esquerda" />
         </a>

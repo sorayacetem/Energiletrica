@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Navigation from './components/navigation';
 import Dashboard from './components/dashboard';
 import Unifilar from './components/unifilar';
+import Pmt from './components/pmt';
 import Medidor from './components/medidor';
 import Historico from './components/historico';
 import Alarmes from './components/alarmes';
@@ -17,6 +18,7 @@ const App = () => {
       <Switch>                
           <Route exact path="/dashboard" component={Dashboard} />
           <Route path="/unifilar" component={Unifilar} />
+          <Route path="/pmt" component={Pmt} />
           <Route path="/medidor" component={Medidor} />
           <Route path="/historico" component={Historico} />
           <Route path="/alarmes" component={Alarmes} /> 

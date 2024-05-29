@@ -6,9 +6,15 @@ const Historico = () => {
         <div className="page">
         <div className="navTop">
         
-        <h3>HISTÓRICO</h3>
+        <h3 className="titulo-color">HISTÓRICO</h3>
         </div>
 
+        <div id="body_historico">
+            <div className="dados_historico">
+
+            </div>
+            <button>RECONHECER HISTÓRICO</button>
+        </div>
   
     </div>
 

@@ -5,10 +5,18 @@ const Alarmes = () => {
         <div className="page">
             <div className="navTop">
             
-            <h3>ALARMES</h3>
+            <h3 className="titulo-color">ALARMES</h3>
             </div>
 
       
+
+        <div id="body_alarmes">
+            <div className="dados_alarmes">
+
+            </div>
+            <button>RECONHECER ALARMES</button>
+        </div>
+
         </div>
 
     );

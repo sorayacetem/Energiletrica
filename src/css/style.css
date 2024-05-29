@@ -129,23 +129,43 @@ a{
     height: 40px;
     margin: auto 0;
     
+    
 }
 
-.navTop h3{
-    color: #006DAE;
+.navTop h3{    
     width: auto;
 }
 
-h3 .active{
-    color: #868686;
+.disponivel{
+    color: #868686; 
+}
+
+.titulo-color{
+    color: #006DAE;
 }
 
 
 /* Submenu */
 
+.medidor-submenu {
+    position: absolute;
+    top: 35%; 
+    left: 20vw; 
+    width: 200px;
+    height: 140px;
+    background-color: #00AE9F;
+    z-index: 1000;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
 
-
-
+  .medidor-submenu h3{
+    margin: 2px auto;
+    
+  }
 
 
 /* Dashboard */
@@ -417,21 +437,21 @@ h3 .active{
     margin: 0;
 }
 
-.body_medicoes{
-    
+.body_medicoes{    
     width: 100%;
 }
 
 .medicoes{
-    width: 100%;
+    width: 97%;
     height: auto;
     display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
 .me_corrente{
     width: 30%;
     height: auto;
-    margin: 20px;
     border: 1px solid #024D80;
     
 }
@@ -459,6 +479,8 @@ h3 .active{
     /* border: 1px solid #024D80; */
     display: flex;
     text-align: center;
+    
+
 }
 
 .row-large{
@@ -479,38 +501,43 @@ h3 .active{
     min-width: 70px;
     min-height: 33px;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 1.5em;
 }
 
 .row h3{
-    margin: 0;
+    margin:0;
     background-color: #006DAE;
     border: 1px solid #024D80;
     min-width: 70px;
     min-height: 33px;
+    font-size: 1.5em;
     color: #fff;
-    font-size: 0.9em;
+    padding: 0;
+
 }
 
 .dados{
     width:100%;
     border: 1px solid #024D80;
+    text-align: center;
+    color: #333;
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
 
 .me_tensao{
     width: 64%;
     height: auto;
-    margin: 20px;
-    border: 1px solid #024D80;
-    
+    margin: 0 20px;
+    border: 1px solid #024D80;    
 }
 
 
 .me_energiaTotal{
     width: 30%;
     height: auto;
-    margin: 20px;
+
    
 }
 
@@ -518,10 +545,86 @@ h3 .active{
 .me_potencia{
     width: 64%;
     height: auto;
-    margin: 20px;
+    margin: 0 20px;
     border: 1px solid #024D80;
 }
 
+
+.fator_potencia,
+.frequencia{
+    width: 40%;
+    height: auto;
+    display: flex; 
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.fator_potencia h3,
+.frequencia h3{
+    margin:0;
+    background-color: #006DAE;
+    border: 1px solid #024D80;
+    width: 90%;
+    min-height: 33px;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+
+/* PMT */
+
+#body_pmt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#body_pmt img{
+    height: 700px;
+}
+
+
+/* Historico */
+
+#body_historico,
+#body_alarmes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#body_historico button,
+#body_alarmes button{
+    background: linear-gradient(to left, #00AE9F, #01c7b6) ;
+    border: 5px solid #006DAE;
+    width: auto;
+    height: 70px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.dados_historico,
+.dados_alarmes{
+    border: 1px solid #00AE9F;
+    width: 90%;
+    height: 80%;
+}
 
 
 

@@ -5,7 +5,7 @@ const Medidor = () => {
   return (
     <div className="page">
       <div className="navTop">
-        <h3>MEDIDOR</h3>
+        <h3 className="titulo-color">MEDIDOR</h3>
       </div>
 
       <div className="box_medidor">
@@ -88,7 +88,6 @@ const Medidor = () => {
             <div className="body_medicoes">
 
                 <div className="medicoes">
-
                     <div className="me_corrente">
                         
                         <div class="titulo_medicoes">
@@ -97,19 +96,19 @@ const Medidor = () => {
                         <div className="dados_me">
                             <div className="row">
                                 <h3>R</h3>
-                                <div id="dados_R" className="dados">                                
+                                <div id="dados_corrente_R" className="dados">                                
                                 </div>
                             </div>
 
                             <div className="row">
                                 <h3>S</h3>
-                                <div id="dados_S" className="dados"> 
+                                <div id="dados_corrente_S" className="dados"> 
                                 </div>
                             </div>
 
                             <div className="row">
                                 <h3>T</h3>
-                                <div id="dados_T" className="dados">                                
+                                <div id="dados_corrente_T" className="dados">                                
                                 </div>
                             </div>
                         </div>
@@ -124,30 +123,30 @@ const Medidor = () => {
 
                             <div className="row">
                                 <h3>R-S</h3>
-                                <div className="dados">                                
+                                <div className="dados" id="dados_tensao_RS">                                
                                 </div>
                                 <h3>R</h3>
-                                <div className="dados">                                
+                                <div className="dados" id="dados_tensao_R">                                
                                 </div>
                                 
                             </div>
 
                             <div className="row">
                                 <h3>S-T</h3>
-                                <div className="dados">                                
+                                <div className="dados" id="dados_tensao_ST">                                
                                 </div>
                                 <h3>S</h3>
-                                <div className="dados">
+                                <div className="dados" id="dados_tensao_S">
                                 </div>
                                 
                             </div>
 
                             <div className="row">
                                 <h3>R-T</h3>
-                                <div className="dados">                                
+                                <div className="dados" id="dados_tensao_RT">                                
                                 </div>
                                 <h3>T</h3>
-                                <div className="dados">                                
+                                <div className="dados" id="dados_tensao_T">                                
                                 </div>
                                 
                             </div>
@@ -166,13 +165,13 @@ const Medidor = () => {
 
                             <div className="row-large">
                                 <h3>ATIVA</h3>
-                                <div className="dados">                                
+                                <div className="dados" id="E_total_ativa">                                
                                 </div>
                             </div>
 
                             <div className="row-large">
                                 <h3>REATIVA</h3>
-                                <div className="dados">
+                                <div className="dados" id="E_total_reativa">
                                 </div>
                             </div>
 
@@ -187,32 +186,48 @@ const Medidor = () => {
                         <div className="dados_me">
                             <div className="row">
                                 <h3>ATIVA TOTAL</h3>
-                                <div className="dados">                                
+                                <div className="dados" id="P_ativa_total">                                
                                 </div>
                             </div>
 
                             <div className="row">
                                 <h3>REATIVA TOTAL</h3>
-                                <div className="dados">
+                                <div className="dados" id="P_reativa_total">
                                 </div>
                             </div>
 
                             <div className="row">
                                 <h3>APARENTE TOTAL</h3>
-                                <div className="dados">
+                                <div className="dados" id="P_aparente_total">
                                 </div>
                             </div>
 
                         </div>
                     </div>
+
+
                 </div>
 
-                <>
-                    <div className="fator_potencia"></div>
-                    <div className="frequencia"></div>
-                </>
+                <div className="medicoes">
+                
+                    <div className="fator_potencia">                    
+                        <h3>FATOR POTÊNCIA</h3>
+                          <div className="dados" id="dados_f_potencia">                                
+                          </div>
+                    </div>
+                    
+                    <div className="frequencia">
+                      <h3>FREQUÊNCIA</h3>
+                          <div className="dados" id="dados_frequencia">                                
+                          </div>
+                    </div>
+
+                
+                </div>
             </div>
         </div>
+
+        
     </div>
   );
 };
